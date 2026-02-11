@@ -1,0 +1,128 @@
+/* Page background */
+.chat-page {
+  min-height: 100vh;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Chat card */
+.chat-container {
+  width: 420px;
+  max-width: 95%;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+/* Title */
+.chat-title {
+  text-align: center;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* Messages area */
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f9fafb;
+  margin-bottom: 12px;
+}
+
+/* Single message */
+.chat-message {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* Username */
+.chat-user {
+  font-weight: 600;
+  color: #2563eb;
+  margin-right: 6px;
+}
+
+/* Message text */
+.chat-text {
+  color: #111827;
+}
+
+/* Input area */
+.chat-input-area {
+  display: flex;
+  gap: 8px;
+}
+
+/* Input */
+.chat-input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  font-size: 14px;
+}
+
+.chat-input-area input:focus {
+  border-color: #2563eb;
+}
+
+/* Button */
+.chat-input-area button {
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.chat-input-area button:hover {
+  background: #1d4ed8;
+}
+.chat-input-area button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+/* Scrollbar styling */
+.chat-box::-webkit-scrollbar {
+  width: 8px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.chat-box::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+.chat-box::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 4px;
+}
+.chat-box::-webkit-scrollbar-track:hover {
+  background: #e5e7eb;
+}
+/* Emoji picker container */
+.emoji-picker {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+  z-index: 10;
+}
+
+/* Emoji button */
+.emoji-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
